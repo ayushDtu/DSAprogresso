@@ -1,4 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"  # Adjust this path if your build output is different
+  environment = { NODE_VERSION = "16" }  # Specify a valid Node.js version
+
 [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+  from = "/*"
+  to = "/index.html"
+  status = 200
