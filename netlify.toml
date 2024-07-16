@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
-  publish = "dist"  # Adjust this path if your build output is different
-  environment = { NODE_VERSION = "16" }  # Specify a valid Node.js version
+  publish = "build"
+  environment = { NODE_VERSION = "16" }
 
 [[redirects]]
   from = "/*"

@@ -11,7 +11,6 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.2",
-    "react-scripts": "^5.0.1",
     "react-top-loader": "^1.0.0",
     "redux": "^4.2.1",
     "web-vitals": "^2.1.4"
@@ -21,9 +20,12 @@
     "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d build"
-    },
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -43,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "react-scripts": "^5.0.1",
     "tailwindcss": "^3.2.7"
   }
 }
